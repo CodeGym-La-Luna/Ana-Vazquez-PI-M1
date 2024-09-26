@@ -11,7 +11,7 @@ public class BruteForce {
             allAttempts.append("Clave ").append(i).append(": ").append(attempt).append("\n");
         }
 
-        // Devolver todos los intentos para inspección
+        // Devolver todos los intentos para revision
         return allAttempts.toString();
     }
 }
