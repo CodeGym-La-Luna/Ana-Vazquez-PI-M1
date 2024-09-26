@@ -7,7 +7,7 @@ public class MenuCifradoCesar {
     public void menuiniciar() {
 
         Scanner scanner = new Scanner(System.in);
-        Cifrado cifrado = new Cifrado("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzüéáíóúñÑ ¿¡.,!?-_/0123456789²º".toCharArray());
+        Cifrado cifrado = new Cifrado("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzüéáíóúñÑ ¿¡.,;!?*-_/0123456789²º".toCharArray());
         FileManager fileManager = new FileManager();
         Validador validador = new Validador();
 
@@ -72,6 +72,9 @@ public class MenuCifradoCesar {
 
                     String textToEncrypt = fileManager.leerArchivo(inputFilePath);
                     String encryptedText = cifrado.encrypt(textToEncrypt, desplazamiento);
+                    //Mostrar el texto en la consola
+                    System.out.println("Decifrado por fuerza bruta:\n" + encryptedText);
+                    //Guardar el archivo
                     fileManager.escribirArchivoChannel(encryptedText, encryptedFilePath);
                     System.out.println("Texto cifrado guardado en: " + encryptedFilePath);
                     break;
@@ -109,6 +112,9 @@ public class MenuCifradoCesar {
 
                     String textoaDescifrar = fileManager.leerArchivo(encryptedFilePathForDecryption);
                     String descifradoTx = cifrado.decrypt(textoaDescifrar, cambioaDescifrado);
+                    //Mostrar el texto en la consola
+                    System.out.println("Decifrado por fuerza bruta:\n" + descifradoTx);
+                    //Guardar el archivo
                     fileManager.escribirArchivoChannel(descifradoTx, decryptedFilePath);
                     System.out.println("Texto descifrado guardado en: " + decryptedFilePath);
                     break;
@@ -128,6 +134,9 @@ public class MenuCifradoCesar {
                     String textoCifrado = fileManager.leerArchivo(encryptedFileForBruteForce);
                     BruteForce bruteForce = new BruteForce();
                     String bruteForcedDecryptedText = bruteForce.decryptByBruteForce(textoCifrado, cifrado.getAlphabet());
+                    //Mostrar el texto en la consola
+                    System.out.println("Decifrado por fuerza bruta:\n" + bruteForcedDecryptedText);
+                    //Guardar el resultado en archivo.
                     fileManager.escribirArchivoChannel(bruteForcedDecryptedText, bruteForceOutputFile);
                     System.out.println("Texto descifrado por fuerza bruta guardado en: " + bruteForceOutputFile);
                     break;
