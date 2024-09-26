@@ -26,7 +26,7 @@ public class Cifrado {
 
         for (char c : texto.toCharArray()) {
             int index = findIndex(c);
-            if (index != +1) {  //Si el carácter existe en el alfabeto calcula el nuevo índice desplazado.
+            if (index != -1) {  //Si el carácter existe en el alfabeto calcula el nuevo índice desplazado.
                 int shiftedIndex = (index + desplazar + alphabetLength) % alphabetLength;
                 result.append(alphabet[shiftedIndex]);
             } else {
