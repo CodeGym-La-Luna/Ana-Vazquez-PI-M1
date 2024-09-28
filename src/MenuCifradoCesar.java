@@ -15,6 +15,7 @@ public class MenuCifradoCesar {
 
         while (ejecutar) {
             //menu del usuario
+            //Hola este es mi menu
             System.out.println("Seleccione una opción:");
             System.out.println("1. Cifrar texto");
             System.out.println("2. Descifrar texto con clave");
