@@ -64,16 +64,17 @@ Descripción: Encargada de la lectura y escritura de archivos utilizando FileCha
 #### Funcionalidad principal:
 *	Lectura de archivo: Lee un archivo desde una ruta especificada y devuelve su contenido como texto.
 *	Escritura de archivo: Escribe un texto en un archivo en una ruta especificada.
-#### Métodos: •	leerArchivo(): Lee un archivo y devuelve su contenido como una cadena de texto.
+#### Métodos: 
+•	leerArchivo(): Lee un archivo y devuelve su contenido como una cadena de texto.                                                                  
 •	escribirArchivoChannel(): Escribe una cadena de texto en un archivo.
 
-### 6.Clase Validador:
+### 6. Clase Validador:
 Descripción: Valida las claves de cifrado y las rutas de los archivos.
 #### Funcionalidad principal:
 *	Validación de clave: Verifica que la clave esté dentro de los límites del alfabeto.
 *	Validación de existencia de archivo: Verifica que un archivo exista en la ruta especificada.
 #### Métodos:
-•	isValidKey(): Verifica que la clave esté dentro del rango permitido por el alfabeto.
+•	isValidKey(): Verifica que la clave esté dentro del rango permitido por el alfabeto.                                                               
 •	isFileExists(): Verifica si un archivo existe en la ruta especificada.
 
 
