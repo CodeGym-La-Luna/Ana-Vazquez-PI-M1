@@ -35,7 +35,8 @@ Este programa implementa el cifrado y descifrado de texto utilizando el Cifrado 
 
 ##### Opciones:
 
-![image](https://github.com/user-attachments/assets/09726440-c5dd-418e-ae5d-5d4f6e2ee83e)
+![image](https://github.com/user-attachments/assets/e5287dc7-1e37-4b8e-b99a-c28e0b5fe64a)
+
 
 1.	***Cifrar texto***: El usuario proporciona una ruta de archivo, una ruta de salida y una clave de cifrado. Se lee el archivo, se cifra su contenido y se guarda en un nuevo archivo.
 2.	***Descifrar texto con clave***: Similar a la opción de cifrado, pero descifra el archivo con una clave proporcionada.
